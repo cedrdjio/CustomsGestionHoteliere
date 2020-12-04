@@ -220,9 +220,6 @@
         dDIVlkQBe0N6DhK4r5JwLXmOfq5M1JzBNuAgfa1SpXQkEn8A3xhCqGty13MAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="gset_hotelDataSet4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>14, 15</value>
-  </metadata>
   <data name="guna2ImageButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAA/pJREFUaEPt
@@ -269,9 +266,6 @@
   </data>
   <metadata name="reservationBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>729, 15</value>
-  </metadata>
-  <metadata name="gsethotelDataSet4BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>498, 15</value>
   </metadata>
   <metadata name="gsethotelDataSet4BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>498, 15</value>

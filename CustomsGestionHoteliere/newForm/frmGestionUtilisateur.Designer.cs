@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionUtilisateur));
@@ -36,26 +37,34 @@
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.addUtilisateur = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtnom = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
             this.txtusername = new Guna.UI2.WinForms.Guna2TextBox();
             this.txttel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtsex = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtid = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cbsatut = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtpsw = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtadress = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtpost = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.easygestBdDataSet = new CustomsGestionHoteliere.easygestBdDataSet();
+            this.uTILISATEURSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uTILISATEURSTableAdapter = new CustomsGestionHoteliere.easygestBdDataSetTableAdapters.UTILISATEURSTableAdapter();
+            this.idUtilisateurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomUtilisateurDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motDePasseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statutidStatutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.slider)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easygestBdDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTILISATEURSBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuFlatButton2
@@ -152,61 +161,20 @@
             // addUtilisateur
             // 
             this.addUtilisateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
-            this.addUtilisateur.Controls.Add(this.txtnom);
             this.addUtilisateur.Controls.Add(this.guna2Button16);
             this.addUtilisateur.Controls.Add(this.txtusername);
             this.addUtilisateur.Controls.Add(this.txttel);
-            this.addUtilisateur.Controls.Add(this.txtsex);
             this.addUtilisateur.Controls.Add(this.txtid);
             this.addUtilisateur.Controls.Add(this.bunifuCustomLabel5);
             this.addUtilisateur.Controls.Add(this.cbsatut);
             this.addUtilisateur.Controls.Add(this.txtpsw);
             this.addUtilisateur.Controls.Add(this.txtadress);
-            this.addUtilisateur.Controls.Add(this.txtpost);
             this.addUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.addUtilisateur.Name = "addUtilisateur";
             this.addUtilisateur.Padding = new System.Windows.Forms.Padding(3);
             this.addUtilisateur.Size = new System.Drawing.Size(805, 500);
             this.addUtilisateur.TabIndex = 0;
             this.addUtilisateur.Text = "addUtilisateur";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.guna2GradientButton4);
-            this.tabPage2.Controls.Add(this.bunifuCustomDataGrid4);
-            this.tabPage2.Controls.Add(this.guna2TextBox4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(805, 500);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "listeUser";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // txtnom
-            // 
-            this.txtnom.BorderColor = System.Drawing.Color.Indigo;
-            this.txtnom.BorderRadius = 16;
-            this.txtnom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtnom.DefaultText = "nom";
-            this.txtnom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtnom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtnom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnom.DisabledState.Parent = this.txtnom;
-            this.txtnom.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnom.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtnom.FocusedState.Parent = this.txtnom;
-            this.txtnom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtnom.HoverState.Parent = this.txtnom;
-            this.txtnom.Location = new System.Drawing.Point(158, 92);
-            this.txtnom.Name = "txtnom";
-            this.txtnom.PasswordChar = '\0';
-            this.txtnom.PlaceholderText = "";
-            this.txtnom.SelectedText = "";
-            this.txtnom.SelectionStart = 3;
-            this.txtnom.ShadowDecoration.Parent = this.txtnom;
-            this.txtnom.Size = new System.Drawing.Size(329, 36);
-            this.txtnom.TabIndex = 71;
             // 
             // guna2Button16
             // 
@@ -220,19 +188,20 @@
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
             this.guna2Button16.HoverState.Parent = this.guna2Button16;
-            this.guna2Button16.Location = new System.Drawing.Point(285, 419);
+            this.guna2Button16.Location = new System.Drawing.Point(220, 318);
             this.guna2Button16.Name = "guna2Button16";
             this.guna2Button16.ShadowDecoration.Parent = this.guna2Button16;
             this.guna2Button16.Size = new System.Drawing.Size(188, 45);
             this.guna2Button16.TabIndex = 70;
             this.guna2Button16.Text = "enregistrer";
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // txtusername
             // 
             this.txtusername.BorderColor = System.Drawing.Color.Indigo;
             this.txtusername.BorderRadius = 16;
             this.txtusername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtusername.DefaultText = "Username";
+            this.txtusername.DefaultText = "Nom D\'utilisateur";
             this.txtusername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtusername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtusername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -242,14 +211,13 @@
             this.txtusername.FocusedState.Parent = this.txtusername;
             this.txtusername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusername.HoverState.Parent = this.txtusername;
-            this.txtusername.Location = new System.Drawing.Point(387, 26);
+            this.txtusername.Location = new System.Drawing.Point(158, 68);
             this.txtusername.Name = "txtusername";
             this.txtusername.PasswordChar = '\0';
             this.txtusername.PlaceholderText = "";
             this.txtusername.SelectedText = "";
-            this.txtusername.SelectionStart = 8;
             this.txtusername.ShadowDecoration.Parent = this.txtusername;
-            this.txtusername.Size = new System.Drawing.Size(211, 36);
+            this.txtusername.Size = new System.Drawing.Size(312, 36);
             this.txtusername.TabIndex = 69;
             // 
             // txttel
@@ -267,7 +235,7 @@
             this.txttel.FocusedState.Parent = this.txttel;
             this.txttel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txttel.HoverState.Parent = this.txttel;
-            this.txttel.Location = new System.Drawing.Point(504, 101);
+            this.txttel.Location = new System.Drawing.Point(158, 121);
             this.txttel.Name = "txttel";
             this.txttel.PasswordChar = '\0';
             this.txttel.PlaceholderText = "";
@@ -276,31 +244,6 @@
             this.txttel.ShadowDecoration.Parent = this.txttel;
             this.txttel.Size = new System.Drawing.Size(211, 36);
             this.txttel.TabIndex = 68;
-            // 
-            // txtsex
-            // 
-            this.txtsex.BorderColor = System.Drawing.Color.Indigo;
-            this.txtsex.BorderRadius = 16;
-            this.txtsex.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtsex.DefaultText = "   Sex";
-            this.txtsex.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtsex.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtsex.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtsex.DisabledState.Parent = this.txtsex;
-            this.txtsex.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtsex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtsex.FocusedState.Parent = this.txtsex;
-            this.txtsex.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtsex.HoverState.Parent = this.txtsex;
-            this.txtsex.Location = new System.Drawing.Point(158, 152);
-            this.txtsex.Name = "txtsex";
-            this.txtsex.PasswordChar = '\0';
-            this.txtsex.PlaceholderText = "";
-            this.txtsex.SelectedText = "";
-            this.txtsex.SelectionStart = 6;
-            this.txtsex.ShadowDecoration.Parent = this.txtsex;
-            this.txtsex.Size = new System.Drawing.Size(200, 36);
-            this.txtsex.TabIndex = 67;
             // 
             // txtid
             // 
@@ -332,7 +275,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(311, 288);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(270, 229);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(61, 20);
             this.bunifuCustomLabel5.TabIndex = 65;
@@ -356,7 +299,7 @@
             "admin",
             "user"});
             this.cbsatut.ItemsAppearance.Parent = this.cbsatut;
-            this.cbsatut.Location = new System.Drawing.Point(315, 311);
+            this.cbsatut.Location = new System.Drawing.Point(274, 252);
             this.cbsatut.Name = "cbsatut";
             this.cbsatut.ShadowDecoration.Parent = this.cbsatut;
             this.cbsatut.Size = new System.Drawing.Size(140, 36);
@@ -377,7 +320,7 @@
             this.txtpsw.FocusedState.Parent = this.txtpsw;
             this.txtpsw.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtpsw.HoverState.Parent = this.txtpsw;
-            this.txtpsw.Location = new System.Drawing.Point(421, 221);
+            this.txtpsw.Location = new System.Drawing.Point(387, 121);
             this.txtpsw.Name = "txtpsw";
             this.txtpsw.PasswordChar = '\0';
             this.txtpsw.PlaceholderText = "";
@@ -402,40 +345,28 @@
             this.txtadress.FocusedState.Parent = this.txtadress;
             this.txtadress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtadress.HoverState.Parent = this.txtadress;
-            this.txtadress.Location = new System.Drawing.Point(158, 221);
+            this.txtadress.Location = new System.Drawing.Point(158, 177);
             this.txtadress.Name = "txtadress";
             this.txtadress.PasswordChar = '\0';
             this.txtadress.PlaceholderText = "";
             this.txtadress.SelectedText = "";
             this.txtadress.SelectionStart = 8;
             this.txtadress.ShadowDecoration.Parent = this.txtadress;
-            this.txtadress.Size = new System.Drawing.Size(187, 36);
+            this.txtadress.Size = new System.Drawing.Size(200, 36);
             this.txtadress.TabIndex = 62;
             // 
-            // txtpost
+            // tabPage2
             // 
-            this.txtpost.BorderColor = System.Drawing.Color.Indigo;
-            this.txtpost.BorderRadius = 16;
-            this.txtpost.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpost.DefaultText = "poste";
-            this.txtpost.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtpost.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtpost.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpost.DisabledState.Parent = this.txtpost;
-            this.txtpost.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpost.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpost.FocusedState.Parent = this.txtpost;
-            this.txtpost.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtpost.HoverState.Parent = this.txtpost;
-            this.txtpost.Location = new System.Drawing.Point(387, 161);
-            this.txtpost.Name = "txtpost";
-            this.txtpost.PasswordChar = '\0';
-            this.txtpost.PlaceholderText = "";
-            this.txtpost.SelectedText = "";
-            this.txtpost.SelectionStart = 5;
-            this.txtpost.ShadowDecoration.Parent = this.txtpost;
-            this.txtpost.Size = new System.Drawing.Size(211, 36);
-            this.txtpost.TabIndex = 61;
+            this.tabPage2.Controls.Add(this.guna2GradientButton4);
+            this.tabPage2.Controls.Add(this.bunifuCustomDataGrid4);
+            this.tabPage2.Controls.Add(this.guna2TextBox4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(805, 500);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "listeUser";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // guna2GradientButton4
             // 
@@ -450,7 +381,7 @@
             this.guna2GradientButton4.Location = new System.Drawing.Point(634, 21);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(108, 54);
+            this.guna2GradientButton4.Size = new System.Drawing.Size(108, 45);
             this.guna2GradientButton4.TabIndex = 14;
             this.guna2GradientButton4.Text = "Rechercher";
             // 
@@ -458,6 +389,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid4.AutoGenerateColumns = false;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -471,6 +403,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idUtilisateurDataGridViewTextBoxColumn,
+            this.nomUtilisateurDataGridViewTextBoxColumn,
+            this.motDePasseDataGridViewTextBoxColumn,
+            this.telephoneDataGridViewTextBoxColumn,
+            this.adresseDataGridViewTextBoxColumn,
+            this.statutidStatutDataGridViewTextBoxColumn});
+            this.bunifuCustomDataGrid4.DataSource = this.uTILISATEURSBindingSource;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
             this.bunifuCustomDataGrid4.EnableHeadersVisualStyles = false;
@@ -510,6 +450,56 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
             this.guna2TextBox4.TabIndex = 12;
             // 
+            // easygestBdDataSet
+            // 
+            this.easygestBdDataSet.DataSetName = "easygestBdDataSet";
+            this.easygestBdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uTILISATEURSBindingSource
+            // 
+            this.uTILISATEURSBindingSource.DataMember = "UTILISATEURS";
+            this.uTILISATEURSBindingSource.DataSource = this.easygestBdDataSet;
+            // 
+            // uTILISATEURSTableAdapter
+            // 
+            this.uTILISATEURSTableAdapter.ClearBeforeFill = true;
+            // 
+            // idUtilisateurDataGridViewTextBoxColumn
+            // 
+            this.idUtilisateurDataGridViewTextBoxColumn.DataPropertyName = "idUtilisateur";
+            this.idUtilisateurDataGridViewTextBoxColumn.HeaderText = "idUtilisateur";
+            this.idUtilisateurDataGridViewTextBoxColumn.Name = "idUtilisateurDataGridViewTextBoxColumn";
+            // 
+            // nomUtilisateurDataGridViewTextBoxColumn
+            // 
+            this.nomUtilisateurDataGridViewTextBoxColumn.DataPropertyName = "nomUtilisateur";
+            this.nomUtilisateurDataGridViewTextBoxColumn.HeaderText = "nomUtilisateur";
+            this.nomUtilisateurDataGridViewTextBoxColumn.Name = "nomUtilisateurDataGridViewTextBoxColumn";
+            // 
+            // motDePasseDataGridViewTextBoxColumn
+            // 
+            this.motDePasseDataGridViewTextBoxColumn.DataPropertyName = "motDePasse";
+            this.motDePasseDataGridViewTextBoxColumn.HeaderText = "motDePasse";
+            this.motDePasseDataGridViewTextBoxColumn.Name = "motDePasseDataGridViewTextBoxColumn";
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            // 
+            // statutidStatutDataGridViewTextBoxColumn
+            // 
+            this.statutidStatutDataGridViewTextBoxColumn.DataPropertyName = "statutidStatut";
+            this.statutidStatutDataGridViewTextBoxColumn.HeaderText = "statutidStatut";
+            this.statutidStatutDataGridViewTextBoxColumn.Name = "statutidStatutDataGridViewTextBoxColumn";
+            // 
             // frmGestionUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -523,12 +513,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionUtilisateur";
             this.Text = "frmGestionUtilisateur";
+            this.Load += new System.EventHandler(this.frmGestionUtilisateur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.slider)).EndInit();
             this.materialTabControl1.ResumeLayout(false);
             this.addUtilisateur.ResumeLayout(false);
             this.addUtilisateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.easygestBdDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uTILISATEURSBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,19 +534,25 @@
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage addUtilisateur;
         private System.Windows.Forms.TabPage tabPage2;
-        private Guna.UI2.WinForms.Guna2TextBox txtnom;
         private Guna.UI2.WinForms.Guna2Button guna2Button16;
         private Guna.UI2.WinForms.Guna2TextBox txtusername;
         private Guna.UI2.WinForms.Guna2TextBox txttel;
-        private Guna.UI2.WinForms.Guna2TextBox txtsex;
         private Guna.UI2.WinForms.Guna2TextBox txtid;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Guna.UI2.WinForms.Guna2ComboBox cbsatut;
         private Guna.UI2.WinForms.Guna2TextBox txtpsw;
         private Guna.UI2.WinForms.Guna2TextBox txtadress;
-        private Guna.UI2.WinForms.Guna2TextBox txtpost;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private easygestBdDataSet easygestBdDataSet;
+        private System.Windows.Forms.BindingSource uTILISATEURSBindingSource;
+        private easygestBdDataSetTableAdapters.UTILISATEURSTableAdapter uTILISATEURSTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idUtilisateurDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomUtilisateurDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn motDePasseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statutidStatutDataGridViewTextBoxColumn;
     }
 }

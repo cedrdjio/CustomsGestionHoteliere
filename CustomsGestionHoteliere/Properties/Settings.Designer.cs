@@ -32,5 +32,15 @@ namespace CustomsGestionHoteliere.Properties {
                 return ((string)(this["gset_hotelConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=easygestBd;Integrated Security=True")]
+        public string easygestBdConnectionString {
+            get {
+                return ((string)(this["easygestBdConnectionString"]));
+            }
+        }
     }
 }

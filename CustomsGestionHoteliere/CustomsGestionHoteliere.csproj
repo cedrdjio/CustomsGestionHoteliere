@@ -78,6 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="easygestBdDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>easygestBdDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="encientTravail\enregistreClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +201,17 @@
     <EmbeddedResource Include="encientTravail\splashsreen.resx">
       <DependentUpon>splashsreen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="easygestBdDataSet.xsc">
+      <DependentUpon>easygestBdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="easygestBdDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>easygestBdDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="easygestBdDataSet.xss">
+      <DependentUpon>easygestBdDataSet.xsd</DependentUpon>
+    </None>
     <None Include="encientTravail\gset_hotelDataSet.xsc">
       <DependentUpon>gset_hotelDataSet.xsd</DependentUpon>
     </None>
