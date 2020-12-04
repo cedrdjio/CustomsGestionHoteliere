@@ -31,5 +31,13 @@ namespace CustomsGestionHoteliere.newForm
         {
 
         }
+
+        private void txtIdBoisson_TextChanged(object sender, EventArgs e)
+        {
+            if(txtIdBoisson.Text !="")
+            {
+                txtIdBoisson.Enabled=false;
+            }
+        }
     }
 }

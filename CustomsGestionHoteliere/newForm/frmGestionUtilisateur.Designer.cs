@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionUtilisateur));
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -49,8 +49,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.bunifuCustomDataGrid4 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.slider = new System.Windows.Forms.PictureBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.slider = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.addUtilisateur.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -138,7 +138,7 @@
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(855, 505);
-            this.materialTabControl1.TabIndex = 9;
+            this.materialTabControl1.TabIndex = 0;
             // 
             // addUtilisateur
             // 
@@ -157,9 +157,9 @@
             this.addUtilisateur.Location = new System.Drawing.Point(4, 22);
             this.addUtilisateur.Name = "addUtilisateur";
             this.addUtilisateur.Padding = new System.Windows.Forms.Padding(3);
-            this.addUtilisateur.Size = new System.Drawing.Size(805, 500);
+            this.addUtilisateur.Size = new System.Drawing.Size(847, 479);
             this.addUtilisateur.TabIndex = 0;
-            this.addUtilisateur.Text = "addUtilisateur";
+            this.addUtilisateur.Text = "Ajouter Utilisateur";
             // 
             // txtnom
             // 
@@ -184,7 +184,7 @@
             this.txtnom.SelectionStart = 3;
             this.txtnom.ShadowDecoration.Parent = this.txtnom;
             this.txtnom.Size = new System.Drawing.Size(329, 36);
-            this.txtnom.TabIndex = 71;
+            this.txtnom.TabIndex = 2;
             // 
             // guna2Button16
             // 
@@ -198,12 +198,12 @@
             this.guna2Button16.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button16.ForeColor = System.Drawing.Color.White;
             this.guna2Button16.HoverState.Parent = this.guna2Button16;
-            this.guna2Button16.Location = new System.Drawing.Point(285, 419);
+            this.guna2Button16.Location = new System.Drawing.Point(299, 401);
             this.guna2Button16.Name = "guna2Button16";
             this.guna2Button16.ShadowDecoration.Parent = this.guna2Button16;
             this.guna2Button16.Size = new System.Drawing.Size(188, 45);
-            this.guna2Button16.TabIndex = 70;
-            this.guna2Button16.Text = "enregistrer";
+            this.guna2Button16.TabIndex = 9;
+            this.guna2Button16.Text = "Enregistrer";
             // 
             // txtusername
             // 
@@ -228,7 +228,7 @@
             this.txtusername.SelectionStart = 8;
             this.txtusername.ShadowDecoration.Parent = this.txtusername;
             this.txtusername.Size = new System.Drawing.Size(211, 36);
-            this.txtusername.TabIndex = 69;
+            this.txtusername.TabIndex = 1;
             // 
             // txttel
             // 
@@ -253,7 +253,7 @@
             this.txttel.SelectionStart = 11;
             this.txttel.ShadowDecoration.Parent = this.txttel;
             this.txttel.Size = new System.Drawing.Size(211, 36);
-            this.txttel.TabIndex = 68;
+            this.txttel.TabIndex = 3;
             // 
             // txtsex
             // 
@@ -278,7 +278,7 @@
             this.txtsex.SelectionStart = 6;
             this.txtsex.ShadowDecoration.Parent = this.txtsex;
             this.txtsex.Size = new System.Drawing.Size(200, 36);
-            this.txtsex.TabIndex = 67;
+            this.txtsex.TabIndex = 4;
             // 
             // txtid
             // 
@@ -303,7 +303,7 @@
             this.txtid.SelectionStart = 14;
             this.txtid.ShadowDecoration.Parent = this.txtid;
             this.txtid.Size = new System.Drawing.Size(200, 36);
-            this.txtid.TabIndex = 66;
+            this.txtid.TabIndex = 0;
             // 
             // bunifuCustomLabel5
             // 
@@ -338,7 +338,7 @@
             this.cbsatut.Name = "cbsatut";
             this.cbsatut.ShadowDecoration.Parent = this.cbsatut;
             this.cbsatut.Size = new System.Drawing.Size(140, 36);
-            this.cbsatut.TabIndex = 64;
+            this.cbsatut.TabIndex = 8;
             // 
             // txtpsw
             // 
@@ -363,7 +363,7 @@
             this.txtpsw.SelectionStart = 12;
             this.txtpsw.ShadowDecoration.Parent = this.txtpsw;
             this.txtpsw.Size = new System.Drawing.Size(177, 36);
-            this.txtpsw.TabIndex = 63;
+            this.txtpsw.TabIndex = 7;
             this.txtpsw.Visible = false;
             // 
             // txtadress
@@ -389,7 +389,7 @@
             this.txtadress.SelectionStart = 8;
             this.txtadress.ShadowDecoration.Parent = this.txtadress;
             this.txtadress.Size = new System.Drawing.Size(187, 36);
-            this.txtadress.TabIndex = 62;
+            this.txtadress.TabIndex = 6;
             // 
             // txtpost
             // 
@@ -414,7 +414,7 @@
             this.txtpost.SelectionStart = 5;
             this.txtpost.ShadowDecoration.Parent = this.txtpost;
             this.txtpost.Size = new System.Drawing.Size(211, 36);
-            this.txtpost.TabIndex = 61;
+            this.txtpost.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -427,7 +427,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(847, 479);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "listeUser";
+            this.tabPage2.Text = "Lise Utilisateur";
             // 
             // guna2GradientButton4
             // 
@@ -449,20 +449,20 @@
             // 
             // bunifuCustomDataGrid4
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.bunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.White;
             this.bunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuCustomDataGrid4.DoubleBuffered = true;
@@ -475,16 +475,6 @@
             this.bunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid4.Size = new System.Drawing.Size(841, 381);
             this.bunifuCustomDataGrid4.TabIndex = 13;
-            // 
-            // slider
-            // 
-            this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(22)))), ((int)(((byte)(36)))));
-            this.slider.Location = new System.Drawing.Point(12, 48);
-            this.slider.Name = "slider";
-            this.slider.Size = new System.Drawing.Size(94, 10);
-            this.slider.TabIndex = 7;
-            this.slider.TabStop = false;
-            this.slider.Click += new System.EventHandler(this.slider_Click);
             // 
             // guna2TextBox4
             // 
@@ -513,8 +503,19 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(257, 45);
             this.guna2TextBox4.TabIndex = 16;
             // 
+            // slider
+            // 
+            this.slider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(22)))), ((int)(((byte)(36)))));
+            this.slider.Location = new System.Drawing.Point(12, 48);
+            this.slider.Name = "slider";
+            this.slider.Size = new System.Drawing.Size(94, 10);
+            this.slider.TabIndex = 7;
+            this.slider.TabStop = false;
+            this.slider.Click += new System.EventHandler(this.slider_Click);
+            // 
             // FrmGestionUtilisateur
             // 
+            this.AcceptButton = this.guna2GradientButton4;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));

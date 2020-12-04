@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomsGestionHoteliere.newForm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace CustomsGestionHoteliere
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NouveauFormParent());
+            Application.Run(new FormSplachScreen());
         }
     }
 }
