@@ -31,9 +31,16 @@ namespace CustomsGestionHoteliere.newForm
         {
             if (con.State == ConnectionState.Closed)
                 con.Open();
-            SqlDataAdapter adp = new SqlDataAdapter(" rech_nomStatut", con);
+            SqlDataAdapter adp = new SqlDataAdapter(" insert_utilisateur", con);
             adp.SelectCommand.CommandType = CommandType.StoredProcedure;
-            adp.SelectCommand.Parameters.AddWithValue("@idStatut", );
+            adp.SelectCommand.Parameters.AddWithValue("   @idUtilisateur INT,
+  
+    @adresse VARCHAR(255),
+    @statutidStatut INT", txtadress.Text);
+            adp.SelectCommand.Parameters.AddWithValue("@ @motDePasse ", txtadress.Text);
+            adp.SelectCommand.Parameters.AddWithValue("@idStatut", txtadress.Text);
+            adp.SelectCommand.Parameters.AddWithValue("@idStatut", txtadress.Text);
+
             DataTable Dat = new DataTable();
             adp.Fill(Dat);
             return Dat.Rows.;
